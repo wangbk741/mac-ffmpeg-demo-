@@ -1,0 +1,14 @@
+prefix=/Users/zqb/Desktop/video/ffmpeg/FFmpeg-iOS-build-script-master/1
+exec_prefix=${prefix}
+libdir=/Users/zqb/Desktop/video/ffmpeg/FFmpeg-iOS-build-script-master/1/lib
+includedir=/Users/zqb/Desktop/video/ffmpeg/FFmpeg-iOS-build-script-master/1/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 5.5.100
+Requires: libavutil >= 56.31.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswscale -lm
+Libs.private: 
+Cflags: -I${includedir}

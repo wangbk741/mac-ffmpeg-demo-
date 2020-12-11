@@ -1,0 +1,14 @@
+prefix=/Users/zqb/Desktop/video/ffmpeg/FFmpeg-iOS-build-script-master/1
+exec_prefix=${prefix}
+libdir=/Users/zqb/Desktop/video/ffmpeg/FFmpeg-iOS-build-script-master/1/lib
+includedir=/Users/zqb/Desktop/video/ffmpeg/FFmpeg-iOS-build-script-master/1/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 58.29.100
+Requires: libavcodec >= 58.54.100, libswresample >= 3.5.100, libavutil >= 56.31.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lm -lbz2 -lz -Wl,-framework,CoreFoundation -Wl,-framework,Security
+Libs.private: 
+Cflags: -I${includedir}
